@@ -312,7 +312,8 @@ nav.shrink .navbar-toggle {
 {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-	color: #333;
+	color: #FFF;
+	text-shadow: 2px 2px #333;
 }
 .header-title
 {
@@ -385,7 +386,7 @@ nav.shrink .navbar-toggle {
 	background-repeat: no-repeat;
 	background-size: 85%;
   	background-position-x: 15%;
-  	background-position-y: 80%;
+  	background-position-y: 30%;
 }
 #about 
 {
@@ -904,4 +905,36 @@ footer a:hover
 	.btn-reservation {
 		padding: 10px;
 	}
+}
+
+.rating-star{
+	font-size: 3rem;
+	width: 3rem;
+	height: 3rem;
+	padding: 0 2rem;
+	position: relative;
+  }
+  
+  .full-star:before {
+	color: #FFB300;
+	content: "\2605";
+	position: absolute;
+	left: 0;
+	overflow: hidden;
+  }
+
+  .empty-star:before {
+	content: "\2605";
+	position: absolute;
+	left: 0;
+	overflow: hidden;
+  }
+
+  .vl {
+    border-left: 3px solid saddlebrown;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 110%;
 }
